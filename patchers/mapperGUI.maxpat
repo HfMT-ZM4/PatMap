@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 8,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -87,6 +87,7 @@
 					"enablevscroll" : 0,
 					"id" : "obj-54",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "mapper.inspectors.maxpat",
 					"numinlets" : 1,
@@ -126,7 +127,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 193.0, 100.5, 273.0, 20.0 ],
-					"restore" : [ "/client", 0.0 ],
+					"restore" : [ "/bonk", 1.531140804290771, 2.080959796905518, 2.128620147705078, 2.265931367874146, 1.321143388748169, 1.194496393203735, 0.916735529899597, 0.689854919910431, 0.596677839756012, 0.592864632606506 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -148,8 +149,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -204,9 +205,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 139.892883000000012, 160.0, 260.0, 20.0 ],
-									"presentation_linecount" : 2,
-									"text" : "Package/Quintet.net/patchers/PatMap/patchers/methods"
+									"patching_rect" : [ 139.892882999999983, 162.0, 259.0, 20.0 ],
+									"text" : "package:Quintet.net/patchers/PatMap/patchers/methods"
 								}
 
 							}
@@ -228,11 +228,11 @@
 									"fontsize" : 10.0,
 									"id" : "obj-2",
 									"maxclass" : "newobj",
-									"numinlets" : 2,
-									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 139.89288300000004, 135.0, 73.0, 20.0 ],
-									"text" : "route notfound"
+									"numinlets" : 3,
+									"numoutlets" : 3,
+									"outlettype" : [ "", "", "" ],
+									"patching_rect" : [ 139.89288300000004, 135.0, 151.0, 20.0 ],
+									"text" : "route notfound \"Macintosh HD:/\""
 								}
 
 							}
@@ -244,7 +244,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 139.89288300000004, 85.0, 167.0, 20.0 ],
+									"patching_rect" : [ 139.89288300000004, 80.0, 167.0, 20.0 ],
 									"text" : "Package/PatMap/patchers/methods"
 								}
 
@@ -257,7 +257,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 139.89288300000004, 110.0, 66.0, 20.0 ],
+									"patching_rect" : [ 139.89288300000004, 108.0, 66.0, 20.0 ],
 									"text" : "absolutepath"
 								}
 
@@ -276,18 +276,6 @@
 									}
 ,
 									"text" : "js scriptMapperMethods mapper.instances"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-104",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 205.000000000000028, 30.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -374,7 +362,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "clear" ],
-									"patching_rect" : [ 139.89288300000004, 57.0, 53.0, 22.0 ],
+									"patching_rect" : [ 139.89288300000004, 51.0, 53.0, 22.0 ],
 									"text" : "t b clear"
 								}
 
@@ -501,13 +489,6 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
-									"destination" : [ "obj-29", 0 ],
-									"source" : [ "obj-104", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-170", 0 ],
 									"source" : [ "obj-153", 0 ]
 								}
@@ -581,6 +562,13 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-2", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
 									"source" : [ "obj-2", 0 ]
 								}
 
@@ -588,7 +576,7 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-69", 0 ],
-									"source" : [ "obj-2", 1 ]
+									"source" : [ "obj-2", 2 ]
 								}
 
 							}
@@ -797,8 +785,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1165,7 +1153,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 552.0, 128.0, 189.0, 22.0 ],
-									"restore" : [ "Macintosh HD:/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Sirenen" ],
+									"restore" : [ 0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -1320,8 +1308,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 8,
+											"minor" : 5,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -1379,8 +1367,8 @@
 														"fileversion" : 1,
 														"appversion" : 														{
 															"major" : 8,
-															"minor" : 1,
-															"revision" : 8,
+															"minor" : 5,
+															"revision" : 2,
 															"architecture" : "x64",
 															"modernui" : 1
 														}
@@ -1498,8 +1486,8 @@
 																		"fileversion" : 1,
 																		"appversion" : 																		{
 																			"major" : 8,
-																			"minor" : 1,
-																			"revision" : 8,
+																			"minor" : 5,
+																			"revision" : 2,
 																			"architecture" : "x64",
 																			"modernui" : 1
 																		}
@@ -2423,7 +2411,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 268.0, 243.0, 406.0, 22.0 ],
-													"restore" : [ "/oscstring/1/3/xy" ],
+													"restore" : [ "/bonk" ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0
@@ -3070,8 +3058,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 8,
+											"minor" : 5,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -3382,7 +3370,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 229.0, 176.0, 53.0, 22.0 ],
-									"restore" : [ "Macintosh", "HD:/Applications/Max5/patches/Quintet.net/Test-Patches/Vera.mapper.txt" ],
+									"restore" : [ "Macintosh HD:/Users/Shared/Max 8/Packages/Quintet.net/patchers/Projects/Blueprint/Blueprint.map.txt" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -4083,8 +4071,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -4279,8 +4267,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 8,
-											"minor" : 1,
-											"revision" : 8,
+											"minor" : 5,
+											"revision" : 2,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4522,7 +4510,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 143.0, 181.5, 375.0, 22.0 ],
-													"restore" : [ 0, 2, 2, "/oscstring/1/3/xy/z", "udp", "synthesis::extensions::1_Sirenen~.ext.maxpat.1::gain", "map", "nth 1 0.0000 1.0000 0.0000 1.0000 1.0000" ],
+													"restore" : [ 0, 0, 0, "/bonk", "this", "2_3type::action", "trigger", "next" ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0
@@ -4877,7 +4865,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 30.0, 156.0, 240.0, 22.0 ],
-									"restore" : [ 0, 2, 2, "/oscstring/1/3/xy/z", "udp", "synthesis::extensions::1_Sirenen~.ext.maxpat.1::gain", "map", "nth 1 0.0000 1.0000 0.0000 1.0000 1.0000" ],
+									"restore" : [ 0, 0, 0, "/bonk", "this", "2_3type::action", "trigger", "next" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -5025,7 +5013,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 122.75, 395.0, 341.0, 22.0 ],
-									"restore" : [ "synthesis::extensions::1_Sirenen~.ext.maxpat.1::gain" ],
+									"restore" : [ "2_3type::action" ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -6128,8 +6116,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 8,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6403,7 +6391,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 51.0, 522.0, 222.0, 22.0 ],
-					"restore" : [ "udp", "synthesis::extensions::1_Sirenen~.ext.maxpat.1::gain", 0.0 ],
+					"restore" : [ "this", "2_3type::action", "done" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -6610,10 +6598,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 242.5, 140.0, 19.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[15]",
+							"parameter_longname" : "live.text[9]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -6640,10 +6632,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 216.5, 140.0, 19.0, 19.0 ],
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
-							"parameter_longname" : "live.text[3]",
+							"parameter_longname" : "live.text[8]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "live.text",
 							"parameter_type" : 2
@@ -6685,6 +6681,7 @@
 					"hint" : "",
 					"id" : "obj-65",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "InfoMenu2.maxpat",
 					"numinlets" : 1,
@@ -6771,7 +6768,7 @@
 					"patching_rect" : [ 193.0, 206.0, 135.0, 18.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 66.0, 27.0, 195.0, 18.0 ],
-					"text" : "Macintosh",
+					"text" : "Blueprint.map.txt",
 					"textcolor" : [ 0.866666666666667, 0.866666666666667, 0.901960784313726, 1.0 ],
 					"underline" : 1
 				}
@@ -6893,7 +6890,7 @@
 					"presentation_rect" : [ 0.0, 182.0, 591.0, 255.0 ],
 					"rowhead" : 1,
 					"rowheight" : 17,
-					"rows" : 15,
+					"rows" : 1,
 					"selmode" : 3,
 					"varname" : "cellblock"
 				}
@@ -6954,6 +6951,7 @@
 					"fontname" : "Arial",
 					"fontsize" : 10.0,
 					"id" : "obj-66",
+					"linecount" : 3,
 					"maxclass" : "textedit",
 					"numinlets" : 1,
 					"numoutlets" : 4,
@@ -6961,9 +6959,10 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 478.750030999999979, 206.0, 208.0, 18.0 ],
 					"presentation" : 1,
+					"presentation_linecount" : 2,
 					"presentation_rect" : [ 322.0, 27.0, 245.0, 18.0 ],
 					"readonly" : 1,
-					"text" : "/oscstring/1/3/xy 0.526974 0.491091",
+					"text" : "/bonk 1.531141 2.08096 2.12862 2.265931 1.321143 1.194496 0.916736 0.689855 0.596678 0.592865",
 					"textcolor" : [ 0.866666666666667, 0.866666666666667, 0.901960784313726, 1.0 ]
 				}
 
@@ -6979,6 +6978,7 @@
 					"hint" : "",
 					"id" : "obj-119",
 					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "InfoMenu2.maxpat",
 					"numinlets" : 1,
