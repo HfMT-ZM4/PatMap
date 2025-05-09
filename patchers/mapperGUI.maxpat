@@ -102,7 +102,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 193.0, 100.5, 273.0, 20.0 ],
-					"restore" : [ "/lissajous", 0.0 ],
+					"restore" : [ "/lissajous", 1.0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -4235,7 +4235,7 @@
 													"numoutlets" : 3,
 													"outlettype" : [ "", "", "" ],
 													"patching_rect" : [ 143.0, 181.5, 375.0, 22.0 ],
-													"restore" : [ 0, 0, 1, "/event/1", "this", "my::attribute", "scale", "0.0000 1.0000 0.0000 1.0000 1.0000" ],
+													"restore" : [ 0, 0 ],
 													"saved_object_attributes" : 													{
 														"parameter_enable" : 0,
 														"parameter_mappable" : 0
@@ -4583,7 +4583,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 30.0, 156.0, 240.0, 22.0 ],
-									"restore" : [ 0, 0, 1, "/event/1", "this", "my::attribute", "scale", "0.0000 1.0000 0.0000 1.0000 1.0000" ],
+									"restore" : [ 0, 0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0,
 										"parameter_mappable" : 0
@@ -6283,6 +6283,7 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.839216, 0.866667, 0.898039, 1.0 ],
+					"activetextcolor" : [ 0.071196037102503, 0.071195997168178, 0.071196007384196, 1.0 ],
 					"id" : "obj-80",
 					"maxclass" : "live.text",
 					"mode" : 0,
@@ -6296,6 +6297,10 @@
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : "themecolor.live_control_fg_on"
 						}
 ,
 						"valueof" : 						{
@@ -6318,6 +6323,7 @@
 , 			{
 				"box" : 				{
 					"activebgcolor" : [ 0.839216, 0.866667, 0.898039, 1.0 ],
+					"activetextcolor" : [ 0.071196037102503, 0.071195997168178, 0.071196007384196, 1.0 ],
 					"id" : "obj-79",
 					"maxclass" : "live.text",
 					"mode" : 0,
@@ -6331,6 +6337,10 @@
 					"saved_attribute_attributes" : 					{
 						"activebgcolor" : 						{
 							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : "themecolor.live_control_fg_on"
 						}
 ,
 						"valueof" : 						{
@@ -6567,8 +6577,8 @@
 				"box" : 				{
 					"bgcolor" : [ 0.992218, 0.992218, 0.992218, 1.0 ],
 					"bordercolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"coldef" : [ [ 0, 20, 1, 0.0, 0.101961, 0.090196, 1.0, 1, 4149474.5, 4025886.5, 4152828.5, 1.0, -1, 2, 1 ], [ 1, 94, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 2, 52, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 3, 150, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 4, 56, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ], [ 5, 195, 1, 0.0, 0.0, 0.0, 1.0, 1, 0.0, 0.0, 0.0, 1.0, -1, -1, -1 ] ],
-					"cols" : 6,
+					"coldef" : [ [ 0, 20, 1, 0.0, 0.101961, 0.090196, 1.0, 1, 4149474.5, 4025886.5, 4152828.5, 1.0, -1, 2, 1 ] ],
+					"cols" : 1,
 					"colwidth" : 45,
 					"fontface" : 0,
 					"fontname" : "Arial",
